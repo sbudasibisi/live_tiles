@@ -1,0 +1,19 @@
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/Genwi.js"></script>
+<script>
+oIP.register('articles', Genwi.Template.Articles);
+</script>
+
+
+<div id="gw_articles">
+</div>
+<script id="gw_articles_tmpl" type="x-handlebars-tmpl">
+	<div class="row">
+		{{#each items}}
+		<div class="cell rect">
+			<div class="text">{{item_title}}
+			</div>
+		</div>
+		{{/each}}
+	</div>
+</script>

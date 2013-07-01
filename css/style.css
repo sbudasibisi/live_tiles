@@ -8,20 +8,18 @@ body {
 .row {
   width: 100%;
   height: 100px;
-  display: block;
-  font: bold 18px Georgia, serif;
-  color: white; }
+  display: block; }
   .row .cell:nth-child(4n+1) {
-    background-color: #f5b013;
+    background-color: #5abff5;
     float: left; }
   .row .cell:nth-child(4n+2) {
-    background-color: #239bf5;
+    background-color: #f5bc12;
     float: right; }
   .row .cell:nth-child(4n+3) {
-    background-color: #789025;
+    background-color: #97b324;
     float: left; }
   .row .cell:nth-child(4n+4) {
-    background-color: #f52d2b;
+    background-color: #f5671a;
     float: right; }
 
 .cell {
@@ -30,6 +28,15 @@ body {
   margin: 0px;
   position: relative; }
 
-.text {
+.rect {
+  width: 100% !important; }
+  .rect .text {
+    margin-top: 20px;
+    font: 15px Geneva, serif;
+    color: white; }
+
+.square .text {
   margin-top: 23%;
-  text-align: center; }
+  text-align: center;
+  font: bold 18px Geneva, serif;
+  color: white; }

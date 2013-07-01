@@ -1,7 +1,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <script src="js/Genwi.js"></script>
 <script>
-oIP.register('article_city', Genwi.Template.Article);
+oIP.register('article', Genwi.Template.Article);
 </script>
 
 
@@ -10,9 +10,12 @@ oIP.register('article_city', Genwi.Template.Article);
 <script id="gw_article_tmpl" type="x-handlebars-tmpl">
 	<div class="row">
 		{{#each categories}}
-		<div class="cell">
-			<div class="text">{{title}}
+		<div class="cell square">
+		<a href="http://app.genwi.com/4.0/articles/42982/{{catid}}">
+			<div class="text">
+			{{title}}
 			</div>
+		</a>
 		</div>
 		{{/each}}
 	</div>
